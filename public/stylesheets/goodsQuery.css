@@ -1,0 +1,38 @@
+td {
+    text-align:center;
+}
+.form-group {
+    width: 48%;
+    line-height: 3em;
+    margin-left: 1%;
+}
+.form-inline {
+    position: relative;
+}
+.button {
+  position: absolute;
+  right: 8%;
+  bottom: 2%;
+}
+.form-group input, .form-group select  {
+    display: inline-block;
+    margin-left: 10px;
+}
+.minus {
+    margin-left: 10px;
+}
+@media (max-width: 768px) {
+    .form-inline .form-group {
+        width: 100%;
+    }
+    .form-group input, .form-group select  {
+        width: auto;
+    }
+}
+.table-bordered > tbody > tr > td {
+    vertical-align: middle;
+}
+.form-control {
+    width: 76px;
+    margin: 0 auto;
+}

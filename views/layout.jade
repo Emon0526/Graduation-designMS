@@ -1,0 +1,11 @@
+html
+    head
+        title 
+        block head
+            <link rel="stylesheet" href="./stylesheets/layout.css">
+    body
+        include header.html
+        block content
+        include footer.html
+        block scripts
+            script(type="text/javascript" src="./jquery/dist/jquery.js")
