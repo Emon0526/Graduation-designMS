@@ -11,6 +11,7 @@ $("#goods-confirm").on("click",function() {
     var id = $("#code").prop("value");
     var imgs = getImages();
     var img = imgs.split(" ")[0];
+    var types = $("#recommend").prop("value");
 
 
     if (judgeContent(goodsName, goodsUnit, price, number, id)) {
@@ -25,7 +26,8 @@ $("#goods-confirm").on("click",function() {
             id: id,
             detail: content,
             imgs: imgs,
-            img: img
+            img: img,
+            types: types
         }, function(data) {
             if (data.status === "200") {
                 $("#goods-confirm").popover({title: "亲~~", content: "添加商品成功"});
