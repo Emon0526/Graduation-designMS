@@ -10,6 +10,8 @@ $("#goods-confirm").on("click",function() {
     var number = $("#number").prop("value");
     var id = $("#code").prop("value");
     var imgs = getImages();
+    var img = imgs.split(" ")[0];
+
 
     if (judgeContent(goodsName, goodsUnit, price, number, id)) {
         $.post("/add", {
@@ -22,7 +24,8 @@ $("#goods-confirm").on("click",function() {
             number: number,
             id: id,
             detail: content,
-            imgs: imgs
+            imgs: imgs,
+            img: img
         }, function(data) {
             if (data.status === "200") {
                 $("#goods-confirm").popover({title: "亲~~", content: "添加商品成功"});
@@ -37,7 +40,6 @@ $("#goods-confirm").on("click",function() {
         });
     }
 })
-
 var getImages = function() {
     var imgs = ["#imgShowOne","#imgShowTwo","#imgShowThree","#imgShowFour"];
     var images = "";
@@ -110,7 +112,6 @@ $("#price, #code, #number").on("keyup", function() {
     $(this)[0].value = $(this)[0].value.replace(/\.{2,}/g,".");
     $(this)[0].value = $(this)[0].value.replace(".","$#$").replace(/\./g,"").replace("$#$",".");
 });
-
 $("#uploadFileOne, #uploadFileTwo, #uploadFileThree, #uploadFileFour, #uploadFileFive").on('click',function() {
     var uploadId = this.id;
 

@@ -25,7 +25,8 @@ addController.prototype.add_goods = function(req, res) {
                 detail : req.body.detail,
                 more_img : req.body.imgs,
                 remark : req.body.remark,
-                barcode : req.body.id
+                barcode : req.body.id,
+                img:req.body.img
             })
         } else {
             headers = {

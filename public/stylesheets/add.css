@@ -124,16 +124,13 @@ select {
 .add-goods-photo {
     width: 97%;
     overflow: hidden;
-    margin-left: 38px;
+    margin: 0 auto;
 }
 .add-goods-photo .add-goods-photo-a {
-    width: 132px;
+    width: 200px;
     height: 170px;
     border: 1px solid #e6e6e6;
-    padding: 5px 16px 0 16px;
-    margin-right: 20px;
-    padding-top: 9px;
-
+    padding: 10px 0px 10px 50px;
 }
 .add-goods-photo li {
     float: left;
