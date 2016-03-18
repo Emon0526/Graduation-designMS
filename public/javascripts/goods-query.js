@@ -69,4 +69,10 @@ $(function() {
     $("#goods-price-up").on("keydown", function(evt) {
         inputValidation(evt);
     });
+
+
+
+    $('#itemDel,itemModify').on('cilck',function(){
+        console.log('删除！');
+    })
 })
