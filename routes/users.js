@@ -1,10 +1,8 @@
 var express = require('express');
 var router = express.Router();
-var models = require('../models');
-var User = models.users;
-var goodsQuery = require('../controller/users');
-var goodsQuery = new goodsQuery();
-router.get('/', user);
+var user = require('../controller/user');
+var user = new user();
 
+router.get('/', user.renderUserPage);
 
 module.exports = router;
