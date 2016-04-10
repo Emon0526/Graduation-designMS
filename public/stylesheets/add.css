@@ -87,8 +87,10 @@ textarea, input, select {
     font-size: 12px;
 }
 .add-goods-name .add-goods-name-a input {
-    width: 155px;
-    height: 26px;
+    width: 460px;
+    height: 36px;
+    max-width: 600px;
+    max-height: 100px;
 }
 .add-goods-name .add-goods-name-a select {
     margin-right: 10px;

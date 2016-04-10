@@ -3,9 +3,9 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser')
-    , fs = require('fs')
-    , path = require('path')
-    , multipart = require('connect-multiparty');
+, fs = require('fs')
+, path = require('path')
+, multipart = require('connect-multiparty');
 
 var path = require('path');
 var ueditor = require("ueditor");
@@ -50,6 +50,9 @@ app.use('/goods_promotion_manage',goodsPromotionManage);
 
 var add = require('./routes/add');
 app.use('/add',add);
+
+var goodlist = require('./routes/goodlist');
+app.use('/goodlist',goodlist);
 
 var goods_query = require('./routes/goods');
 app.use('/goods',goods_query);
