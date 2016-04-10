@@ -181,3 +181,10 @@ function deletePicture(imgId,inputId) {
     $(imgId).prop("src", "/images/img.jpg");
     $(inputId).html('<input type="file" name="files" class="upload-picture"/>');
 }
+
+$('.itemDel').on('click', function () {
+    if (confirm('确认要删除吗')) {
+        $('.del').hide();
+    }
+
+})

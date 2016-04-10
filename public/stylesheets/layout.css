@@ -1,6 +1,7 @@
 .top {
-    background: #563d7c;
+    background: #56C4CF;
     height: 50px;
+    margin-bottom: 20px;
 }
 .title {
     margin: 0;
@@ -53,7 +54,7 @@
 }
 #nav li ul li {
     width: 180px;
-    background: #563d7c;
+    background: #56C4CF;
 }
 #foot {
     width: 100%;

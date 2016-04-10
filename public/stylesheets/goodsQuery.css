@@ -31,6 +31,7 @@ td {
 }
 .table-bordered > tbody > tr > td {
     vertical-align: middle;
+    font-size: 20px;
 }
 .form-control {
     width: 76px;
