@@ -54,6 +54,9 @@ app.use('/add',add);
 var goodlist = require('./routes/goodlist');
 app.use('/goodlist',goodlist);
 
+var user = require('./routes/user');
+app.use('/user',user);
+
 var goods_query = require('./routes/goods');
 app.use('/goods',goods_query);
 

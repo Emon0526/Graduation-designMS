@@ -1,0 +1,10 @@
+extends ./layout.jade
+
+block append head 
+    link(rel="stylesheet" href="./bootstrap/dist/css/bootstrap.css")
+    link(rel="stylesheet" href="./stylesheets/add.css")
+block content
+    include user.html
+block scripts 
+    script(src="./jquery/dist/jquery.min.js")
+    script(src="./bootstrap/dist/js/bootstrap.min.js")
