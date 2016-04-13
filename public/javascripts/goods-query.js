@@ -52,7 +52,8 @@ $(function() {
                 if (result.message === 'ok') {
                     $('.query-result').empty();
                     result.data.forEach(function(item) {
-                        $('<tr><td>' + item.name + '</td><td>' + item.price + '</td><td>' + item.sales + '</td><td>' + item.type + '</td><td>' + '<a class="btn btn-default" id="itemModify" href="/add" role="button">修改</a></td></tr>').appendTo($('.query-result'));
+                        $('<tr><td>' + item.name + '</td><td>' + item.price + '</td><td>' + item.sales + '</td><td>' + item.type + '</td>').appendTo($('.query-result'));
+                        // <td>' + '<a class="btn btn-default" id="itemModify" href="/add" role="button">修改</a></td></tr>'
                     })
                 } else {
                     $('.query-result').empty();

@@ -6,9 +6,7 @@ var user = require('../controller/user');
 var user = new user();
 
 router.get('/', function(req,res){
-	res.render('user', {
-        user: user
-    });
+	res.render('user');
 });
 
 module.exports = router;
